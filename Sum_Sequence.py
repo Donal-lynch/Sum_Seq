@@ -2,10 +2,13 @@
 """
 Created on Tue Jul  4 08:19:39 2017
 
-@author: USER
+@author: Donal
 """
 
 import numpy as np
+
+# DAVE YOU'RE A LEGEND!
+
 
 # Function breaks a range into an int of those numbers
 # eg r2i(3, 6) returns the int 3456
@@ -33,26 +36,26 @@ values = []
 #             values.append(row)    
 
 #3 numbers
-for i in range (1,9):
-    for j in range (i+1,9):
-             v1 = r2i(1,i)
-             v2 = r2i(i+1,j)
-             v3 = r2i(j+1,9)        
-             #print (str(v1)  + str(v2) +  str(v3) +  str(v4))
-             row = (v1, v2, v3)
-             values.append(row)
-
-#4 numbers
 #for i in range (1,9):
 #    for j in range (i+1,9):
-#        for k in range (j+1, 9):
 #             v1 = r2i(1,i)
 #             v2 = r2i(i+1,j)
-#             v3 = r2i(j+1,k)
-#             v4 = r2i(k+1,9)         
+#             v3 = r2i(j+1,9)        
 #             #print (str(v1)  + str(v2) +  str(v3) +  str(v4))
-#             row = (v1, v2, v3, v4)
+#             row = (v1, v2, v3)
 #             values.append(row)
+
+#4 numbers
+for i in range (1,9):
+    for j in range (i+1,9):
+        for k in range (j+1, 9):
+             v1 = r2i(1,i)
+             v2 = r2i(i+1,j)
+             v3 = r2i(j+1,k)
+             v4 = r2i(k+1,9)         
+             #print (str(v1)  + str(v2) +  str(v3) +  str(v4))
+             row = (v1, v2, v3, v4)
+             values.append(row)
 
 #Convert list to array
 np_values = np.array(values)
