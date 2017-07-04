@@ -23,7 +23,6 @@ def r2i (num1,num2):
 #make the 1 - 10 range    
 values = []
 
-x = 6545
 # Nested for loops to populate values
 
 #2 numbers
@@ -100,6 +99,3 @@ for i in np_values:
             print (i)
             print (j)
     
-
-
-
